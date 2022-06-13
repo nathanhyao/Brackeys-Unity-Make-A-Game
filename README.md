@@ -43,4 +43,4 @@
 - 1:20 Physics material (friction)
 - 3:26 Edit script values in Inspector (variables)
 - 5:00 User input if statements
-- 7:30 Better user input handling methods
+- 7:30 Better methods for handling input
