@@ -8,12 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float sidewaysForce = 500f;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Hello, world!");
-        // rb.useGravity = false;
-        // rb.AddForce(0, 200, 500); // x y z
-    }
 
     // Update is called once per frame
     void FixedUpdate() // FixedUpdate better than Update for physics
@@ -24,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
