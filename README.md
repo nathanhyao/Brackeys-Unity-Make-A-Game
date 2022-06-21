@@ -1,10 +1,14 @@
 # Brackeys: How to Make a Video Game
 
-## Ran into:
+## Notable issues encountered
 
 **VS Code C# Intellisense not working for Unity**
 
-Follow [Unity Development with VS Code Article](https://code.visualstudio.com/docs/other/unity). Install .NET SDK (+set path), install .NET Framework Developer Pack. **Unique steps**: Omnisharp: (1) C# Extension settings: omnisharp.useModernNet ON, (2) Unity > Edit > Preferences > External Tools > Generate .csproj files for: UNCHECK ALL.
+Follow [Unity Development with VS Code Article](https://code.visualstudio.com/docs/other/unity). Install .NET SDK (+set path), install .NET Framework Developer Pack. **Unique steps**: (1) VS Code C# Extension settings: omnisharp.useModernNet ON, (2) Unity > Edit > Preferences > External Tools > Generate .csproj files for: UNCHECK ALL.
+
+---
+
+## Series outline
 
 [How to make a Video Game in Unity - BASICS (E01)](https://www.youtube.com/watch?v=IlKaB1etrik&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=2)
 
@@ -14,7 +18,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 2:36 Inspector properties (object components)
 - 2:50 Project panel (game assets)
 - 2:56 Rearranging user interface (default view)
-- 3:15 Create 3d object (hierarchy -> create)
+- 3:15 Create 3d object (hierarchy > create)
 - 3:30 Focus on selected object (F)
 - 4:55 Creating and assigning material
 - 6:09 Add gravity (physics rigidbody)
@@ -47,7 +51,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 1:20 Physics material (friction)
 - 3:26 Edit script values in Inspector (variables)
 - 5:00 User input if statements
-- 7:30 Better user input handling methods
+- 7:30 Better ways to handle user input
 
 [Video Unavailable: How to make a Video Game in Unity - CAMERA FOLLOW (E04)](https://www.youtube.com/watch?v=HVB6UVcb3f8)
 
@@ -68,7 +72,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 2:43 Material smoothness
 - 3:02 Rigidbody adjusting mass
 - 3:21 OnCollisionEnter(Collision collisionInfo)
-- 3:55 collisionInfo.collider.name
+- 3:55 Check collision with specific object
 - 5:18 Tags vs object name
 - 5:43 Adding tags
 - 6:34 Disabling player movement script
@@ -78,26 +82,26 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 0:22 Creating never-ending levels
 - 0:42 Creating prefabs (same properties)
 - 0:58 Update all prefabs at once
-- 1:08 Update prefab individually (Overrides -> Apply)
+- 1:08 Update prefab individually (Overrides > Apply)
 - 1:34 Creating endless runners
 - 2:10 Axes views and perspective/isometric
 - 2:34 Toggle scene skybox, fog, flares, etc.
 - 2:43 Toggle grid
 - 2:47 Add and assign layer
 - 3:00 Lock layers, prevent selection
-- 3:14 Moving on 2 axes (plane)
+- 3:14 Moving object on 2 axes (plane)
 - 3:20 Snap objects to grid (Ctrl)
-- 3:40 Creating a level
+- 3:40 Create level
 - 4:23 More responsive controls (ForceMode.VelocityChange)
-- 5:40 Drag/air resistance
+- 5:40 Drag / Air resistance
 - 6:12 Play game shortcut (Ctrl + P)
-- 6:32 Fog (Window -> Lighting -> Environment)
+- 6:32 Window > Lighting > Environment > Fog
 
 [SCORE & UI - How to make a Video Game in Unity (E07)](https://www.youtube.com/watch?v=TAGZxRMloyU)
 
-- 0:10 Organization (folders)
+- 0:10 Folder organization
 - 0:33 Fixing pass-through collisions
-- 1:27 Creating UI elements (text)
+- 1:27 Creating UI text elements
 - 1:38 Canvas and text adjustments
 - 2:49 Scaling UI with screen size
 - 3:38 Using unavailable fonts
@@ -105,7 +109,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 5:02 Get position of player
 - 5:47 Set position as UI score (UnityEngine.UI)
 - 7:42 Change UI score's precision
-- 8:15 Canvas -> Inspector: Pixel Perfect
+- 8:15 Canvas > Inspector: Pixel Perfect
 
 [GAME OVER - How to make a Video Game in Unity (E08)](https://www.youtube.com/watch?v=VbZ9_C4-Qbo)
 
@@ -118,7 +122,27 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 4:14 Unassigned reference exception
 - 4:55 Check if player falls off edge (check Y-value)
 - 5:50 Preventing multiple "Game Over"s
-- 7:18 Restarting the game (UnityEngine.SceneManagement)
-- 8:53 Fix lighting issue with reloading scenes (build)
+- 7:18 Restart game (UnityEngine.SceneManagement)
+- 8:53 Fix lighting issue with reloading scenes
 - 9:55 Slight delay: Invoke("MethodName", restartDelay);
-- 11:00 Better scene reloading: build settings
+- 11:00 Add scene to File > Build Settings
+
+[WINNING LEVELS - How to make a Video Game in Unity (E09)](https://www.youtube.com/watch?v=Iv7A8TzreY4)
+
+- 0:10 Creating a trigger
+- 1:05 Scene icon for invisible objects
+- 1:28 Trigger object script
+- 1:40 OnTriggerEnter()
+- 1:55 Reference GameManager script
+- 2:25 Create and call win function
+- 3:12 Only trigger for a certain object
+- 3:30 Create winning UI panel
+- 4:00 Create winning UI text
+- 4:55 Code to display winning UI screen
+- 5:35 Window > Animation vs Animator
+- 7:00 Keyframes: fade in
+- 8:16 Load new level animation event function
+- 9:20 Load new level by build index
+- 10:30 Scene duplication (save first)
+
+[FINISHING UP - How to make a Video Game in Unity (E10)](https://www.youtube.com/watch?v=r5NWZoTSjWs)
