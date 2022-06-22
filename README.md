@@ -146,3 +146,17 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 10:30 Scene duplication (save first)
 
 [FINISHING UP - How to make a Video Game in Unity (E10)](https://www.youtube.com/watch?v=r5NWZoTSjWs)
+
+- 0:12 Optimize level creation
+- 0:38 Prefabs for level creation
+- 1:05 Level creation for larger games
+- 1:30 Level duplications
+- 2:00 End screen scene (panel + text)
+- 3:38 Quit button styling
+- 4:27 Quit button script Application.Quit()
+- 5:54 Main screen scene
+- 6:59 Start button script
+- 7:47 Adding scenes to build
+- 8:15 Gameplay
+
+[How to BUILD / EXPORT your Game in Unity (Windows | Mac | WebGL)](https://www.youtube.com/watch?v=7nxKAtxGSn8)
