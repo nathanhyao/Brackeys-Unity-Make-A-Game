@@ -1,16 +1,19 @@
-# Brackeys: How to Make a Video Game
+# Starter Unity Video Game, Brackeys
+
+Final Windows x86 game build located in **Builds > Windows > x86**
 
 ## Notable issues encountered
 
 **VS Code C# Intellisense not working for Unity**
 
-Follow [Unity Development with VS Code Article](https://code.visualstudio.com/docs/other/unity). Install .NET SDK (+set path), install .NET Framework Developer Pack. **Unique steps**: (1) VS Code C# Extension settings: omnisharp.useModernNet ON, (2) Unity > Edit > Preferences > External Tools > Generate .csproj files for: UNCHECK ALL.
-
----
+- Follow [Unity Development with VS Code Article](https://code.visualstudio.com/docs/other/unity).
+- Install .NET SDK (+set path), install .NET Framework Developer Pack.
+- **Unique steps (1)** VS Code C# Extension settings: omnisharp.useModernNet ON.
+- **Unique steps (2)** Unity > Edit > Preferences > External Tools > Generate .csproj files for: UNCHECK ALL.
 
 ## Series outline
 
-[How to make a Video Game in Unity - BASICS (E01)](https://www.youtube.com/watch?v=IlKaB1etrik&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=2)
+(1) [How to make a Video Game in Unity - BASICS (E01)](https://www.youtube.com/watch?v=IlKaB1etrik&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=2)
 
 - 1:34 Creating new project
 - 2:16 Scene view navigation
@@ -31,7 +34,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 10:16 Maximizing game view (Shift + Space)
 - 10:21 Save scene
 
-[How to make a Video Game in Unity - PROGRAMMING (E02)](https://www.youtube.com/watch?v=9ZEu_I-ido4&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=3)
+(2) [How to make a Video Game in Unity - PROGRAMMING (E02)](https://www.youtube.com/watch?v=9ZEu_I-ido4&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=3)
 
 - C# Intellisense: install and locate .NET SDK
 - 0:19 Creating scripts
@@ -45,7 +48,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 6:35 Framerate independence (Time.deltaTime)
 - 8:15 FixedUpdate() for physics
 
-[How to make a Video Game in Unity - MOVEMENT (E03)](https://www.youtube.com/watch?v=Au8oX5pu5u4&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=4)
+(3) [How to make a Video Game in Unity - MOVEMENT (E03)](https://www.youtube.com/watch?v=Au8oX5pu5u4&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=4)
 
 - 0:53 Adding position/rotation constraint
 - 1:20 Physics material (friction)
@@ -53,9 +56,9 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 5:00 User input if statements
 - 7:30 Better ways to handle user input
 
-[Video Unavailable: How to make a Video Game in Unity - CAMERA FOLLOW (E04)](https://www.youtube.com/watch?v=HVB6UVcb3f8)
+(4) [Video Unavailable: How to make a Video Game in Unity - CAMERA FOLLOW (E04)](https://www.youtube.com/watch?v=HVB6UVcb3f8)
 
-[Alternative: Creating a Basic CAMERA FOLLOW Script in Unity](https://www.youtube.com/watch?v=IljRXDUTAms)
+(Alternative) [Creating a Basic CAMERA FOLLOW Script in Unity](https://www.youtube.com/watch?v=IljRXDUTAms)
 
 - 0:20 Why parenting doesn't work (rotation)
 - 1:14 Creating camera script component
@@ -63,7 +66,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 2:35 transform.position
 - 3:23 Assinging target and offset
 
-[How to make a Video Game in Unity - COLLISION (E05)](https://www.youtube.com/watch?v=gAB64vfbrhI)
+(5) [How to make a Video Game in Unity - COLLISION (E05)](https://www.youtube.com/watch?v=gAB64vfbrhI)
 
 - 0:45 Create player script component
 - 1:04 OnCollisionEnter()
@@ -77,7 +80,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 5:43 Adding tags
 - 6:34 Disabling player movement script
 
-[GAMEPLAY - How to make a Video Game in Unity (E06)](https://www.youtube.com/watch?v=D4I0I3QJAvc)
+(6) [GAMEPLAY - How to make a Video Game in Unity (E06)](https://www.youtube.com/watch?v=D4I0I3QJAvc)
 
 - 0:22 Creating never-ending levels
 - 0:42 Creating prefabs (same properties)
@@ -97,7 +100,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 6:12 Play game shortcut (Ctrl + P)
 - 6:32 Window > Lighting > Environment > Fog
 
-[SCORE & UI - How to make a Video Game in Unity (E07)](https://www.youtube.com/watch?v=TAGZxRMloyU)
+(7) [SCORE & UI - How to make a Video Game in Unity (E07)](https://www.youtube.com/watch?v=TAGZxRMloyU)
 
 - 0:10 Folder organization
 - 0:33 Fixing pass-through collisions
@@ -111,7 +114,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 7:42 Change UI score's precision
 - 8:15 Canvas > Inspector: Pixel Perfect
 
-[GAME OVER - How to make a Video Game in Unity (E08)](https://www.youtube.com/watch?v=VbZ9_C4-Qbo)
+(8) [GAME OVER - How to make a Video Game in Unity (E08)](https://www.youtube.com/watch?v=VbZ9_C4-Qbo)
 
 - 0:20 Creating GameManager object + component
 - 1:10 Custom EndGame function
@@ -127,7 +130,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 9:55 Slight delay: Invoke("MethodName", restartDelay);
 - 11:00 Add scene to File > Build Settings
 
-[WINNING LEVELS - How to make a Video Game in Unity (E09)](https://www.youtube.com/watch?v=Iv7A8TzreY4)
+(9) [WINNING LEVELS - How to make a Video Game in Unity (E09)](https://www.youtube.com/watch?v=Iv7A8TzreY4)
 
 - 0:10 Creating a trigger
 - 1:05 Scene icon for invisible objects
@@ -145,7 +148,7 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 9:20 Load new level by build index
 - 10:30 Scene duplication (save first)
 
-[FINISHING UP - How to make a Video Game in Unity (E10)](https://www.youtube.com/watch?v=r5NWZoTSjWs)
+(10) [FINISHING UP - How to make a Video Game in Unity (E10)](https://www.youtube.com/watch?v=r5NWZoTSjWs)
 
 - 0:12 Optimize level creation
 - 0:38 Prefabs for level creation
@@ -159,4 +162,12 @@ Follow [Unity Development with VS Code Article](https://code.visualstudio.com/do
 - 7:47 Adding scenes to build
 - 8:15 Gameplay
 
-[How to BUILD / EXPORT your Game in Unity (Windows | Mac | WebGL)](https://www.youtube.com/watch?v=7nxKAtxGSn8)
+(Build/Export) [How to BUILD / EXPORT your Game in Unity (Windows | Mac | WebGL)](https://www.youtube.com/watch?v=7nxKAtxGSn8)
+
+- 0:15 Selecting platforms
+- 0:56 Export render quality
+- 2:05 Company name, product name, game icon
+- 3:34 Standalone (Windows/Mac/Linux) preparation
+- 5:03 Windows build (+ installer)
+- 10:48 MAC build (+ installer)
+- 12:37 WebGL (Browser)
