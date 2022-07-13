@@ -59,3 +59,8 @@ sysinfo.txt
 crashlytics-build.properties
 
 # 2022-7-13 commit note: "git push -f (forced) origin main" (override remote with local)
+
+# Drop files from .gitignore https://fedingo.com/how-to-remove-git-ignore-files-from-git-repository/
+# git ls-files -i -c --exclude-from=.gitignore | %{git rm --cached $_}
+$ git add .
+$ git commit -m "Drop files from .gitignore"
